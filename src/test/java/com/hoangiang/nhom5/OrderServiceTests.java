@@ -23,9 +23,9 @@ public class OrderServiceTests {
     @Test
     public void testAddProductToOrder() {
         Order order = new Order();
-        Product product1 = new Product(1L, "Product A", 1);
-        Product product2 = new Product(1L, "Product A", 2); // Same product
-        Product product3 = new Product(2L, "Product B", 2); //
+        Product product1 = new Product(1L, "Sản phẩm A", 1);
+        Product product2 = new Product(1L, "Sản phẩm A", 2); // Same product
+        Product product3 = new Product(2L, "Sản phẩm B", 2); //
 
         order.addProduct(product1);
         order.addProduct(product2);
@@ -43,8 +43,8 @@ public class OrderServiceTests {
     @Test
     public void testSaveOrder() {
         Order order = new Order();
-        Product product1 = new Product(1L, "Product A", 3);
-        Product product2 = new Product(2L, "Product B", 3);
+        Product product1 = new Product(1L, "Sản phẩm A", 3);
+        Product product2 = new Product(2L, "Sản phẩm B", 3);
         order.addProduct(product1);
         order.addProduct(product2);
 
